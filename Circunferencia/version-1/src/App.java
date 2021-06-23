@@ -1,4 +1,3 @@
-package Program;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -20,7 +19,6 @@ public class App {
 		System.out.printf("Circumference: %.2f\n", Circumference);
 		System.out.printf("volume: %.2f\n", volume);	
 		System.out.printf("PI Value: %.2f\n", pi);
-		System.out.println();
 		ler.close();
 	}
 

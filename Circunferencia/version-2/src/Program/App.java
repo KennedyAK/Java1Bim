@@ -17,7 +17,6 @@ public class App {
 		
 		System.out.print("Enter radius: ");
 		double radius = ler.nextDouble();
-		System.out.println();				
 
 		number.circumference = number.pi * (radius*2);
         number.volume = 4 * number.pi * Math.pow(radius, 3) / 3;
