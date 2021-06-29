@@ -11,18 +11,16 @@ public class App {
 		Scanner ler = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 
-		Esfera number;
-		number = new Esfera();
-		System.out.println();
+		Esfera number = new Esfera();
 		
-		System.out.print("Enter radius: ");
+		System.out.print("\nEnter radius: ");
 		double radius = ler.nextDouble();
+		double c = number.circumference(radius);
+		double v = number.volume(radius);
 
-		number.circumference = number.pi * (radius*2);
-        number.volume = 4 * number.pi * Math.pow(radius, 3) / 3;
-		
-		System.out.printf("circumference: %.2f\n", number.circumference);
-		System.out.printf("volume: %.2f\n", number.volume);	
+
+		System.out.printf("circumference: %.2f\n", c);
+		System.out.printf("volume: %.2f\n", v);	
 		System.out.printf("PI Value: %.2f", number.pi);
 		System.out.println();
 		ler.close();
